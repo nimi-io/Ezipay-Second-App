@@ -4,11 +4,11 @@ import typeDef from "./schemas/typedefIndex";
 import resolvers from "./resolvers/resolverIndex";
 import mongoose from "./utils/db/db"; // Import your Mongoose connection
 
+
 const server = new ApolloServer({
   typeDefs: typeDef.typeDefs,
   resolvers,
 });
-
 
 const startServer = async () => {
   await mongoose();
