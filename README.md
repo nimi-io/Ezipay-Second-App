@@ -30,9 +30,9 @@ Before you begin, ensure you have the following installed on your system:
 1. Clone this repository:
 
    ```shell
-   git clone https://github.com/your-username/your-graphql-backend-service.git
-   
-   cd your-graphql-backend-service
+   https://github.com/nimi-io/Ezipay-Second-App.git
+
+   cd Ezipay-Second-App
 
    npm install
 
