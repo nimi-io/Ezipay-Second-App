@@ -1,12 +1,10 @@
 import mongoose from "mongoose";
+require("dotenv").config();
 
 async function connectToMongoDB() {
   try {
     await mongoose
-      .connect(
-        "mongodb+srv://qwertyuiop:qwertyuiop@cluster73580.qiwomxh.mongodb.net/roro",
-        {}
-      )
+      .connect(`${process.env.MONGO_URL}`, {})
       .then(() => {
         console.log("Connected to MongoDB");
       })
